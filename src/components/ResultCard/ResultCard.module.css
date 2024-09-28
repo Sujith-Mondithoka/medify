@@ -1,0 +1,200 @@
+/* ResultCard.module.css */
+  
+  .contentContainer {
+    width: 100%;
+  }
+  
+  .cardContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .hospitalIcon {
+    width: 80px;
+    height: 80px;
+    background: rgba(140, 207, 255, 1);
+    border-radius: 50%;
+    object-fit: fill;
+  }
+  
+  .hospitalName {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: rgba(20, 190, 240, 1);
+  }
+  
+  .place {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: left;
+    color: rgba(65, 65, 70, 1);
+  }
+  
+  .specialization {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+    color: rgba(65, 65, 70, 1);
+  }
+  
+  .fee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .free {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(2, 164, 1, 1);
+    margin-right: 5px;
+  }
+  
+  .strike {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(120, 120, 135, 1);
+    margin-right: 5px;
+  }
+  
+  .likeSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .like {
+    width: fit-content;
+    padding: 4.5px 10.8px;
+    border-radius: 3.5px;
+    color: white;
+    background: rgba(2, 164, 1, 1);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .buttonSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .buttonSection p {
+    color: rgba(2, 164, 1, 1);
+  }
+  
+  .cardButton {
+    padding: 9.62px 28.55px;
+    border-radius: 4px;
+    border: 1px solid rgba(42, 167, 255, 1);
+    background: rgba(42, 167, 255, 1);
+    color: white;
+    cursor: pointer;
+  }
+  .bookingInfo{
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .timeButton{
+      width: 100px;
+      height: 31.59px;
+      padding: 7px 12px;
+      border-radius: 3px;
+      font-family: Lato;
+      margin: auto 0;
+      font-size: 14px;
+      background: white;
+      border: 1px solid rgba(42, 167, 255, 1);
+      color: rgba(42, 167, 255, 1);
+      cursor: pointer;
+  }
+  .dateButton{
+    width: 100px;
+    height: 31.59px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-family: Lato;
+    margin: auto 0;
+    font-size: 14px;
+    background: white;
+    border: 1px solid  rgba(2, 164, 1, 1);
+    color:  rgba(2, 164, 1, 1);
+    cursor: pointer;
+}
+
+  
+  
+  @media(max-width:768px){
+    .hospitalName{
+      font-size: 18px;
+    }
+    .timeButton{
+      width: 90px;
+      height: 28px;
+    }
+    .dateButton{
+      width: 90px;
+      height: 28px;
+    }
+  }
+
+  @media(max-width:480px){
+    .cardContent{
+      display: flex;
+      flex-direction: column;
+    }
+    .fee{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .buttonSection{
+      align-items: flex-start;
+    }
+    .cardButton{
+      width: 100%;
+    }
+    .timeButton{
+      width: 100px;
+      height: 31.59px;
+    }
+    .dateButton{
+      width: 100px;
+      height: 31.59px;
+    }
+  }
+  @media(max-width:300px){
+    .cardContent{
+      display: flex;
+      flex-direction: column;
+    }
+    .fee{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .buttonSection{
+      align-items: flex-start;
+    }
+    .bookingInfo{
+      display: flex;
+      flex-direction: column;
+    }
+    .cardButton{
+      width: 100%;
+    }
+  }

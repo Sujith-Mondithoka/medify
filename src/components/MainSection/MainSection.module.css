@@ -1,0 +1,107 @@
+.mainSection {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.mainContent h1 {
+  font-size: 36px;
+  color: rgba(16, 40, 81, 1);
+}
+
+.highlight {
+  color: rgba(42, 168, 255, 1);
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 68px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.mainContent p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+
+.findCentersButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.heroImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainImage {
+  width: 643px;
+  height: auto;
+  background-size: cover;
+}
+@media (max-width: 992px) {
+  .mainContent h1 {
+    font-size: 30px;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  .mainContent p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContent h1 {
+    font-size: 28px;
+  }
+
+  .highlight {
+    font-size: 40px;
+  }
+
+  .mainContent p {
+    font-size: 16px;
+  }
+  .heroImage {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContent h1 {
+    font-size: 24px;
+  }
+
+  .highlight {
+    font-size: 32px;
+  }
+
+  .mainContent p {
+    font-size: 14px;
+  }
+
+  .findCentersButton {
+    padding: 8px 16px;
+  }
+}
+

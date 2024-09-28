@@ -1,0 +1,112 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 10%; /* Adjust based on your design */
+}
+
+/* Carousel items */
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px; /* Space between items */
+}
+
+/* Slick slide adjustments */
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slick dots adjustments */
+.slick-dots {
+  margin-top: 20px;
+  display: flex !important;
+  justify-content: center;
+  padding: 10px;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 0 8px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ccc;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #007bff;
+  border: 1px solid rgba(42, 167, 255, 1);
+  border-radius: 50%;
+}
+
+/* Hide navigation arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .carousel-container {
+    padding-top: 5%; /* Adjust padding for medium screens */
+  }
+
+  .slick-dots {
+    margin-top: 15px;
+    padding: 8px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 10px; /* Adjust dot size */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding-top: 5%; /* Adjust padding for small screens */
+  }
+
+  .carousel-item {
+    margin-bottom: 15px; /* Adjust spacing between items */
+  }
+
+  .slick-dots {
+    margin-top: 10px;
+    padding: 6px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px; /* Adjust dot size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding-top: 3%; /* Adjust padding for very small screens */
+  }
+
+  .carousel-item {
+    margin-bottom: 10px; /* Adjust spacing between items */
+  }
+
+  .slick-dots {
+    margin-top: 5px;
+    padding: 4px;
+  }
+
+  .slick-dots li button:before {
+    font-size: 6px; /* Adjust dot size for very small screens */
+  }
+
+  /* Optionally, you can also hide dots or adjust their position */
+  .slick-dots {
+    position: relative; /* Ensure dots are positioned correctly */
+    bottom: 0; /* Adjust if needed */
+  }
+}

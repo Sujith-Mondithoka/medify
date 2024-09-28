@@ -1,0 +1,32 @@
+/* LatestNews.module.css */
+.latestNews {
+    margin-top: 80px;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+  .name{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(42, 167, 255, 1);
+  }
+  .sectionTitle {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 67px;
+    text-align: center;
+    color:rgba(27, 60, 116, 1);
+  }
+  
+  .newsCardsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  

@@ -1,0 +1,235 @@
+/* Overall container */
+.patient-caring {
+    height: auto;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+  }
+  
+  /* Top Section */
+  .top-section {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .free-consultation {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: #eef7ff;
+    width: 234px;
+    height: 86px;
+    top: 10%;
+    left: -23%;
+    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  .imageStack{
+    position: relative;
+    display: inline-block;
+  }
+  .image-top{
+    position: relative;
+    flex-basis: 50%;
+    width: 300px;
+    height: 300px;
+    top: 0%;
+    left: 30%;
+
+  }
+  .image-down{
+    position: absolute;
+    align-items: flex-end;
+    width: 280px;
+    height: 280px;
+    top: 50%;
+    left: -10%;
+    z-index: 100;
+
+  }
+  
+  .icon {
+    background-image: url('../../assets/consultation/callerLogo.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 15px;
+  }
+  
+  .consultation-text h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .consultation-text p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  
+  /* Main Heading */
+  .main-heading {
+    margin-left: 10%;
+    text-align: left;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-heading h2 {
+    color: #35a4dc;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .main-heading h1 {
+    font-size: 36px;
+  }
+  
+  .main-heading h1 span {
+    color: #35a4dc;
+  }
+  
+  .main-heading p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  /* Lower Section */
+  .lower-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .bullet-points {
+    margin-left: 20px;
+  }
+  
+  .bullet-points ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bullet-points li {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bullet-points li:before {
+    content: '✔';
+    color: #35a4dc;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  @media (min-width:1400px){
+      .main-heading{
+        width: 50%;
+      }
+  }
+  @media (max-width: 768px) {
+    .top-section {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+    }
+    .patient-caring{
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .free-consultation {
+      padding: 0;
+      top: 30px; 
+      right: auto;
+      left: -10%;
+      transform: translateX(-50%);
+    }
+    .consultation-text h3{
+      font-size:14px ;
+    }
+    .consultation-text p{
+      font-size: 12px;
+    }
+    .image-down,
+    .image-top {
+      width: 300px; 
+    }
+  
+    .main-heading {
+      padding: 0;
+      margin-top: 100px;
+      text-align: left; 
+      width: 100%;
+      margin-left: 0px;
+    }
+    .bullet-points{
+      margin-left: none;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .main-heading{
+      display: block;
+      padding-left: 60px;
+    }
+    .top-section {
+      flex-direction: row; 
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .free-consultation {
+      top: 20px; /* Adjust position for larger devices */
+      right: 20px; /* Position to the right */
+      transform: none; /* Remove horizontal centering */
+    }
+  
+    .image-down,
+    .image-top {
+      max-width: 332px; /* Adjust image width */
+    }
+  }
+  @media(max-width:480px){
+    .image-down,.image-top{
+      max-width: 230px;
+    }
+    .top-section{
+      width: 100%;
+    }
+    .main-heading{
+      width: 100%;
+      margin-top: 50;
+      margin-left: 0px;
+      text-align: left;
+      padding:0;
+    }
+  }
+  @media(max-width:360px){
+    .top-section{
+      width: 100%;
+    }
+    .image-down,.image-top{
+      max-width: 175px;
+    }
+    .main-heading{
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: 50;
+      margin-left: 0px;
+      padding:0;
+    }
+  }

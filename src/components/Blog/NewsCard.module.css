@@ -1,0 +1,61 @@
+/* NewsCard.module.css */
+.newsCard {
+    width: 363px;
+    height: 458px;
+    left: 12px;
+    padding: 0px 0px 20px 0px;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.07)
+  }
+  
+  .newsImage {
+    width: 363.33px;
+    height: 294.59px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  
+  .newsMeta {
+    color: #6b7280;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  .newsCategory {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+  }
+  
+  .newsTitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color:rgba(27, 60, 116, 1);
+  }
+  
+  .newsAuthor {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorImage {
+    width: 32px;
+    height: 32px;
+    gap: 0px;
+    border-radius: 30px;
+    margin-right: 10px;
+  }
+  
+  .authorName {
+    font-size: 0.875rem;
+    color: #1a202c;
+  }
+  

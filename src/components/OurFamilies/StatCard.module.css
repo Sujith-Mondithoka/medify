@@ -1,0 +1,105 @@
+/* src/components/OurFamilies/StatCard.module.css */
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 242.5px;
+  padding: 20px 0px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+.number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(27, 60, 116, 1);
+  margin: 10px 0;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: rgba(119, 130, 157, 1);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 150px; 
+    padding: 15px 0;
+  }
+
+  .icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .number {
+    font-size: 34px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 160px;
+    padding: 15px 0;
+  }
+
+  .icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .number {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .card {
+    width: 140px;
+    padding: 10px 0;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+}

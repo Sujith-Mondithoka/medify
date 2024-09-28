@@ -1,0 +1,151 @@
+
+  
+  .resultCard {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  .bookingButton{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .calendarContainer {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    background-color:white;
+  }
+  
+  .calendarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .dateSlot {
+    width: 205px;
+    height: 58.2px;
+    padding: 11px 45.32px 10.3px 66.94px;
+    border: 0px 0px 4px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    border-bottom: 4px solid rgba(240, 240, 245, 1);
+    cursor: pointer;
+  }
+
+  .day{
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: center;
+    color: rgba(65, 65, 70, 1);
+  }
+  .slots{
+    font-family: Lato;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(1, 164, 0, 1);
+
+  }
+  
+  .singleDate {
+    text-align: center;
+  }
+  
+  .prevBtn, .nextBtn {
+    width: 48px;
+    height: 48px;
+    top: 5.24px;
+    left: 5px;
+    padding: 14px;
+    border-radius: 24px;
+    background: white;
+    border: 1px solid rgba(224, 224, 228, 1);
+    color: rgba(42, 167, 255, 1);
+    cursor: pointer;
+  }
+  
+  .timeSlots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .timeSlotZones{
+    display: flex;
+    height: 73px;
+    top: 73px;
+    padding: 15.57px 0.01px 17px 0px;
+    border: 0px 0px 1px 0px;
+    border-bottom: 1px solid rgba(240, 240, 245, 1);
+  }
+  
+  .timeSlotHeader {
+    width: 142.65px;
+    height: 40px;
+    padding: 10.5px 46.83px 9.5px 14px;
+    font-family: Lato;
+    font-size: 14px;
+    color: rgba(65, 65, 70, 1);
+    font-weight: 400;
+    line-height: 19.6px;
+  }
+  
+  .timeButton {
+    width: 84px;
+    height: 31.59px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-family: Lato;
+    margin: auto 0;
+    font-size: 14px;
+    margin-right: 40px;
+    background: white;
+    border: 1px solid rgba(42, 167, 255, 1);
+    color: rgba(42, 167, 255, 1);
+    cursor: pointer;
+  }
+  .singleDate {
+    text-align: center;
+    padding-bottom: 10px; /* Keep padding as needed */
+    border-bottom: 4px solid rgba(240, 240, 245, 1); /* Default border color */
+  }
+  
+  .selected {
+    border-bottom-color: rgba(42, 167, 255, 1); /* Change border-bottom color for the selected date */
+  }
+  
+  .timeButton:hover {
+    border-color: rgba(2, 164, 1, 0.7);
+  }
+  
+  .selectedTime {
+    color: rgba(2, 164, 1, 1);
+    border-color: rgba(2, 164, 1, 1);
+    background-color: white;
+  }
+
+  @media (max-width:768px) {
+    .resultCard{
+      width: 100%;
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,47 @@
+.medicalContainer{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.medicalCenters{
+    width: 80%;
+}
+.centersContainer{
+    width: 100%;
+}
+.centersDetail{
+    margin-top: 10%;
+    padding: 10px;
+}
+.highlight{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+}
+.text{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(120, 120, 135, 1);
+}
+
+@media(max-width:992px){
+    .medicalCenters{
+        width: 100%;
+        padding: 0;
+    }
+    .medicalContainer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media(max-width:768px){
+    .medicalCenters{
+        padding-top: 25%;
+    }
+}

@@ -1,0 +1,58 @@
+.promotional-carousel {
+  background: white;
+  width: 100%;
+  padding-bottom: 40px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.promotion-item {
+  height: auto; /* Adjust height to be responsive */
+  margin-bottom: 20px; /* Space between items */
+}
+
+.promotion-item img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .promotion-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .promotional-carousel {
+    padding-bottom: 30px;
+  }
+
+  .promotion-item {
+    margin-bottom: 15px; /* Reduce space between items */
+  }
+
+  .promotion-item img {
+    width: 100%; /* Ensure images fill container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .promotional-carousel {
+    padding-bottom: 20px; /* Further reduce padding for very small screens */
+  }
+
+  .promotion-item {
+    margin-bottom: 10px; /* Further reduce space between items */
+  }
+
+  .promotion-item img {
+    width: 100%; /* Ensure images fill container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Adjust border-radius for smaller screens */
+  }
+}
+

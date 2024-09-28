@@ -1,0 +1,230 @@
+.faqSection {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.subheading {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(42, 167, 255, 1);
+}
+
+.heading {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 67px;
+  text-align: center;
+  color: rgba(27, 60, 116, 1);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  border-radius: 8px;
+  width: 100%; /* Ensure image fills the container */
+  height: auto;
+}
+
+.statBadge {
+  position: absolute;
+  top: 60%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badgeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.statText {
+  text-align: left;
+}
+
+.statText h3 {
+  font-size: 1.2rem;
+  color: #1a202c;
+  margin: 0;
+}
+
+.statText p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.heartIcon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.heartIcon img {
+  width: 40px;
+  height: 40px;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 8px;
+  border: 10px;
+  justify-content: center;
+  width: 50%;
+}
+
+.faqItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.faqItem h4 {
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: rgba(27, 60, 116, 1);
+}
+
+.plus {
+  font-family: Font Awesome 5 Free;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 18px;
+  text-align: right;
+  margin-left: 10px;
+  color: rgba(42, 167, 255, 1);
+}
+
+
+@media screen and (max-width: 1200px) {
+  .faqSection {
+    padding: 30px;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+
+  .faqItem h4 {
+    font-size: 17px;
+  }
+  .statBadge {
+    top: 65%;
+    left: 0%;
+  }
+
+  .heartIcon {
+    top: 50%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqSection {
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .imageContainer,
+  .faqList {
+    width: 100%; /* Full-width on mobile */
+  }
+
+  .image {
+    width: 100%;
+    height: auto; /* Ensure the image scales correctly */
+  }
+
+  .faqItem h4 {
+    font-size: 16px;
+  }
+
+  .plus {
+    font-size: 16px;
+  }
+
+  .statBadge {
+    top: 65%;
+    left: 0%;
+  }
+
+  .heartIcon {
+    top: 50%;
+    right: 5%;
+  }
+}
+
+/* Extra small devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .subheading {
+    font-size: 12px;
+  }
+
+  .faqItem h4 {
+    font-size: 14px;
+  }
+
+  .plus {
+    font-size: 14px;
+  }
+
+  .statBadge {
+    top: 55%;
+    left: 0%;
+  }
+
+  .heartIcon {
+    top: 50%;
+    right: 5%;
+  }
+}

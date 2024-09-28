@@ -1,0 +1,16 @@
+.banner{
+    width: 30%;
+    height: 268px;
+    background: white;
+    height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+@media(max-width:992px){
+    .banner{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}

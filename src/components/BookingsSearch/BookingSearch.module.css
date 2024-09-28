@@ -1,0 +1,43 @@
+.searchButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .searchSection {
+    position: absolute;
+    width:50%;
+    left: 40%;
+    right: 10%;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 6px 6px 35px 0px rgba(16, 40, 81, 0.11);
+    z-index: 10;
+  }
+  .searchInput{
+    width: 60%;
+    padding: 10px 10px 10px 40px;
+    color: rgba(171, 182, 199, 1);
+    border: 1px solid rgba(240, 240, 240, 1);
+    font-family: 'Poppins';
+  }
+  
+  @media(max-width:768px){
+    .searchSection{
+      width: 80%;
+      left: 5%;
+      right: -5%;
+    }
+  }
+  @media(max-width:480px){
+    .searchSection{
+      position: relative;
+      width: 80%;
+      padding-left: 0;
+    }
+    
+  }
