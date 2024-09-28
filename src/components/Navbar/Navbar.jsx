@@ -20,10 +20,13 @@ const Navbar = ({customStyles}) => {
     navigate('/myBookings')
 
   }
+  const handleBrandClick=()=>{
+    navigate('/')
+  }
 
   return (
     <nav className={customStyles || styles.navbar}>
-      <div className={styles.navbarBrand}>
+      <div className={styles.navbarBrand} onClick={handleBrandClick}>
         <span><img src={medifyLogo} alt="Medify Logo" /></span>Medify
       </div>
       <ul className={`${styles.navbarLinks} ${isMobileMenuOpen ? styles.open : ''}`}>
